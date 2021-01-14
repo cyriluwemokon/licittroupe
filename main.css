@@ -708,10 +708,11 @@ menuitem > menu > menuitem.hover > menu > menuitem{
 margin: 0 auto;
   /* background: rgba(221, 214, 214, 0.698); */
   background: rgba(255, 99, 71, 0.609);
+  padding: 0;
 }
 .headsection{
-  width: 150px;
-  margin-top: 4rem;
+  width: 200px;
+  /* margin-top: 4rem; */
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   background: tomato;
@@ -719,4 +720,8 @@ margin: 0 auto;
 }
 .headsection h2{
   color: #fff;
+}
+.muted{
+  color: gray;
+  font-size: 13pt;
 }
