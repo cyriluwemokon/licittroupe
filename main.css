@@ -304,11 +304,11 @@ color: #fff;
   .first-div ul li{
     color: white;
     margin-top: 1rem;
-    margin-left: 9rem;
+    margin-left: 15rem;
     list-style-type: none;
     line-height: 30pt;
   font-size: 14pt;
-    width: 240px;
+    width: fit-content;
   }
   .align-links{
     display: inline-block;

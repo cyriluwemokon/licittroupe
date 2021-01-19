@@ -1,0 +1,21 @@
+body {
+	font-family: Tahoma;
+	font-size:16px;
+	background-color: #737678;
+	margin-top:0px;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #333333;
+}
+a:hover {
+	color: #CCCCCC;
+}
+a:active {
+	color: #333333;
+}
+.a {
+	color: #333333;
+}
