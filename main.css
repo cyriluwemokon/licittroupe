@@ -699,10 +699,81 @@ menuitem > menu > menuitem.hover > menu > menuitem{
   transform: rotate(-45deg);
 }
 
-/*Bootstrap contact*/
-.container{
+.form{
+  width: 650px;
+  margin: 0 auto;
   margin-bottom: 6rem;
 }
+form input[type=text]{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  margin-bottom: 0;
+}
+form textarea{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  width: 101.7%;
+  height: 50px;
+  padding-top: 1rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  margin-bottom: 4rem;
+}
+form button{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-weight: 500;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: rgb(41, 194, 41);
+  color: #fff;
+}
+
+
+
+/*Testimonial form*/
+.add-to{
+  width: 600px;
+  /* margin: 0 auto; */
+  margin-bottom: 6rem;
+}
+.add-to h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+form input[type=text]{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  margin-bottom: 0;
+}
+form textarea{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  width: 103.3%;
+  height: 50px;
+  padding-top: 1rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  margin-bottom: 4rem;
+  resize: none;
+}
+
+form button{
+  border: 1px rgba(255, 99, 71, 0.842) solid;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-weight: 500;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: rgb(41, 194, 41);
+  color: #fff;
+}
+
+
+
 
 /*Digital Marketing Page*/
 .products-category{
@@ -828,4 +899,9 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+
+.align-links .fa{
+  color: orange;
 }
