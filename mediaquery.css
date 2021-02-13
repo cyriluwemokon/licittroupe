@@ -1,0 +1,409 @@
+@media screen and (max-width: 750px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif,'Fira Code', monospace;
+        
+    }
+
+    header{
+        width: 100%;
+        height: 600px;
+        background: tomato;
+        padding-bottom: 10rem;
+        margin-bottom: 6rem;
+    }
+    .dont-display{
+        margin-top: 2rem;
+        position: absolute;
+        margin-left: 1.2rem;
+        font-size: 25px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.815);
+    }
+    
+    .all-the-way{
+        padding-top: 17rem;
+        margin-left: 1.2rem;
+        font-size: 35pt;
+        width: 50%;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    header img{
+      float: right;
+      width: 300px;
+      margin-top: -15rem;
+      margin-right: 1rem;
+    }
+      
+    
+      /*Footer*/
+      .first-div{
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background: tomato;
+      }
+      .first-div ul li{
+        color: white;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        list-style-type: none;
+        line-height: 30pt;
+      font-size: 14pt;
+        width: fit-content;
+      }
+      .align-links{
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .align-links ul a{
+        text-decoration: none;
+    
+      }
+    
+      .socia{
+        width: 60%;
+        margin-left: 8rem;
+        
+      }
+      .socia .fab{
+        font-size: 26px;
+        padding-top: 6rem;
+        margin-bottom: 4rem;
+        margin-left: 4.5rem;
+      }
+
+
+    /*Disclaimer Part*/
+    .disclaimer{
+      padding-bottom: 6rem;
+      width: 600px;
+      /* margin-top: 2rem; */
+      margin: 0 auto;
+    }
+    .disclaimer-content{
+      display: block;
+    }
+    .disclaimer-content p{
+      font-size: 12pt;
+      line-height: 30pt;
+      text-align: justify;
+    }
+    
+    /*Privacy Policy*/
+    .privacy{
+      padding-bottom: 9rem;
+      width: 600px;
+    margin: 0 auto;
+      text-align: justify;
+      line-height: 30pt;
+    }
+    .privacy li{
+      margin-bottom: 0rem;
+    }
+    strong{
+      font-size: 15pt;
+    }
+    
+    
+    /*CRAZY DROPDOWN*/
+    
+    nav menuitem {
+      position:relative;
+      display:block;
+      opacity:0;
+      cursor:pointer;
+    }
+    
+    nav menuitem > menu {
+      position: absolute;
+      pointer-events:none;
+    }
+    nav > menu { display:flex;}
+    
+    nav > menu > menuitem { pointer-events: all; opacity:1; }
+    menu menuitem a { white-space:nowrap; display:block; }
+    
+    menuitem:hover > menu {
+      pointer-events:initial;
+    }
+    menuitem:hover > menu > menuitem,
+    menu:hover > menuitem{
+      opacity:1;
+    }
+    nav > menu > menuitem menuitem menu {
+      transform:translateX(100%);
+      top:0; right:0;
+    }
+    
+    nav a {
+      /* background: tomato; */
+      min-width:30px;
+      box-sizing:border-box;
+      border-radius:3px;
+      position:relative;
+    }
+    
+    nav a:hover:before {
+      content: '';
+      top:0;left:0;
+      position:absolute;
+      /* background:rgba(0, 0, 0, 0.2); */
+      width:100%;
+      height:100%;
+    }
+    
+    nav > menu > menuitem > a + menu:after{
+      content: '';
+      position:absolute;
+      /* border:10px solid transparent;
+      border-top: 10px solid white; */
+      left:12px;
+      top: -40px;  
+      text-decoration: none;
+    }
+    nav menuitem > menu > menuitem > a + menu:after{ 
+      content: '';
+      position:absolute;
+      border:10px solid transparent;
+      border-left: 10px solid white;
+      top: 20px;
+      left:-180px;
+      transition: opacity 0.6, transform 0s;
+    }
+    
+    nav > menu > menuitem > menu > menuitem{
+      transition: transform 0.6s, opacity 0.6s;
+      transform:translateY(150%);
+      opacity:0;
+    }
+    nav > menu > menuitem:hover > menu > menuitem,
+    nav > menu > menuitem.hover > menu > menuitem{
+      transform:translateY(0%);
+      opacity: 1;
+    }
+    
+    menuitem > menu > menuitem > menu > menuitem{
+      transition: transform 0.6s, opacity 0.6s;
+      transform:translateX(195px) translateY(0%);
+      opacity: 0;
+    } 
+    menuitem > menu > menuitem:hover > menu > menuitem,  
+    menuitem > menu > menuitem.hover > menu > menuitem{  
+      transform:translateX(0) translateY(0%);
+      opacity: 1;
+    }
+    
+    
+    .form{
+      width: 650px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+    }
+    form input[type=text]{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      margin-bottom: 0;
+    }
+    form textarea{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      width: 101.7%;
+      height: 50px;
+      padding-top: 1rem;
+      border-radius: 5px;
+      padding-left: 0.5rem;
+      margin-bottom: 4rem;
+    }
+    form button{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 12pt;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    form button:hover{
+      background-color: rgb(41, 194, 41);
+      color: #fff;
+    }
+    
+    
+    
+    /*Testimonial form*/
+    .add-to{
+      width: 600px;
+      /* margin: 0 auto; */
+      margin-bottom: 6rem;
+    }
+    .add-to h3{
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    form input[type=text]{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      margin-bottom: 0;
+    }
+    form textarea{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      width: 103.3%;
+      height: 50px;
+      padding-top: 1rem;
+      border-radius: 5px;
+      padding-left: 0.5rem;
+      margin-bottom: 4rem;
+      resize: none;
+    }
+    
+    form button{
+      border: 1px rgba(255, 99, 71, 0.842) solid;
+      width: 90px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 12pt;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    form button:hover{
+      background-color: rgb(41, 194, 41);
+      color: #fff;
+    }
+    
+    
+    
+    
+    /*Digital Marketing Page*/
+    .products-category{
+      width: 100%;
+    margin: 0 auto;
+      /* background: rgba(221, 214, 214, 0.698); */
+      background: rgba(255, 99, 71, 0.609);
+      padding: 0;
+    }
+    .headsection{
+      width: 200px;
+      /* margin-top: 4rem; */
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      background: tomato;
+      border-top-right-radius: 25px;
+    }
+    .headsection h2{
+      color: #fff;
+    }
+    .muted{
+      color: gray;
+      font-size: 13pt;
+    }
+    
+    
+    /*Payment Form*/
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      padding-bottom: 6rem;
+    }
+    
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+    }
+    form{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+    }
+    
+    .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+      /* width: 80%; */
+    }
+    
+    .contain {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+    }
+    
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    label {
+      margin-top: 4rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-contain {
+      margin-bottom: 2rem;
+      padding: 7px 0;
+      font-size: 34pt;
+      float: right;
+    }
+    
+    .btn {
+      background-color: tomato;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    .contains{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+    
+    
+    
+    .align-links .fa{
+      color: orange;
+    }
+}
+
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
